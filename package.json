@@ -1,12 +1,6 @@
 {
-  "devDependencies": {
-    "@commitlint/cli": "^21.2.4",
-    "@commitlint/config-conventional": "^21.2.4",
-    "husky": "^9.1.7"
-  },
   "name": "software-integration",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "ajv": "^8.20.0",
@@ -55,12 +49,18 @@
     "yargs": "^18.2.0",
     "yargs-parser": "^22.0.0"
   },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "husky": "^9.1.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "description": ""
 }
