@@ -35,7 +35,7 @@ app.get("/user/:id", async (req: Request, res: Response) => {
   try {
     const user = await fetchUser(Number(req.params.id));
     res.send(formatWelcomeMessage(user));
-  } catch (error) {
+  } catch {
     res.status(500).json({ error: "Failed to fetch user" });
   }
 });
